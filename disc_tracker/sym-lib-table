@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Battery_Management")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Battery_Management.kicad_sym")(options "")(descr ""))
+  (lib (name "Connector")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Connector.kicad_sym")(options "")(descr ""))
+  (lib (name "Device")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Device.kicad_sym")(options "")(descr ""))
+  (lib (name "Regulator_Linear")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Regulator_Linear.kicad_sym")(options "")(descr ""))
+  (lib (name "RF_Bluetooth")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/RF_Bluetooth.kicad_sym")(options "")(descr ""))
+)

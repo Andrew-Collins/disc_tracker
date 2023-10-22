@@ -1,0 +1,37 @@
+#!/bin/bash
+
+DIRS=$(find . -name "*.pretty")
+
+END=$(wc -w <<< $DIRS)
+dir_arr=($DIRS)
+for i in $(seq 1 $END)
+  do
+    cd ${dir_arr[i-1]}
+    SPLIT=(${dir_arr[i-1]//./ })
+    echo DIR_SPLIT
+    echo ${dir_arr[i-1]}
+    echo $SPLIT
+    MODEL_NAME=${SPLIT[0]}
+    FILES=$(find . -name "*.kicad_mod")
+    echo FILES
+    echo $FILES
+    END_F=$(wc -w <<< $FILES)
+    MOD_DIR_NAME=$MODEL_NAME.3dshapes
+    echo MOD_DIR_NAME
+    echo $MOD_DIR_NAME
+    mkdir ../$MOD_DIR_NAME
+    for i in $(seq 1 $END_F)
+      do
+        SPLIT=(${FILES[i-1]//./ })
+        NAME=${SPLIT[0]}
+        for t in ${SPLIT[@]:1:${#SPLIT[@]}-2};
+          do
+            NAME=$NAME.$t
+          done
+        echo NAME
+        echo $NAME
+        cp /usr/share/kicad/3dmodels/$MOD_DIR_NAME/$NAME.step ../$MOD_DIR_NAME
+        cp /usr/share/kicad/3dmodels/$MOD_DIR_NAME/$NAME.wrl ../$MOD_DIR_NAME
+      done
+    cd ..
+  done
