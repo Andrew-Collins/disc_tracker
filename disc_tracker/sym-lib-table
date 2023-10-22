@@ -5,4 +5,7 @@
   (lib (name "Device")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Device.kicad_sym")(options "")(descr ""))
   (lib (name "Regulator_Linear")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Regulator_Linear.kicad_sym")(options "")(descr ""))
   (lib (name "RF_Bluetooth")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/RF_Bluetooth.kicad_sym")(options "")(descr ""))
+  (lib (name "power")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/power.kicad_sym")(options "")(descr ""))
+  (lib (name "Connector_Generic")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Connector_Generic.kicad_sym")(options "")(descr ""))
+  (lib (name "Memory_Flash")(type "KiCad")(uri "/home/ac/projs/disc_tracker/libs/Memory_Flash.kicad_sym")(options "")(descr ""))
 )

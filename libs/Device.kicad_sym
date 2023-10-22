@@ -309,6 +309,117 @@
       )
     )
   )
+  (symbol "Antenna_Chip_4P" (pin_names hide) (in_bom yes) (on_board yes)
+    (property "Reference" "ANT" (at -3.81 6.35 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (property "Value" "Antenna_Chip_4P" (at -15.24 3.81 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (property "Footprint" "" (at 31.75 -94.92 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (property "Datasheet" "https://www.johansontechnology.com/datasheets/2450AT18D0100/2450AT18D0100.pdf" (at 31.75 -194.92 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (symbol "Antenna_Chip_4P_0_1"
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy -2.54 -0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy -1.27 0)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 0)
+          (xy 2.54 0)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 1.27)
+          (xy 1.27 -1.27)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 -0.635)
+          (xy 2.54 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 6.985)
+          (xy 2.54 -1.905)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 1.27)
+          (xy -1.27 -1.27)
+          (xy -1.27 0)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 6.985)
+          (xy 2.54 1.905)
+          (xy 1.27 6.985)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.635 1.27)
+          (xy 0.635 1.27)
+          (xy 0.635 -1.27)
+          (xy -0.635 -1.27)
+          (xy -0.635 1.27)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+    )
+    (symbol "Antenna_Chip_4P_1_1"
+      (pin input line (at -2.54 -2.54 90) (length 2.54)
+        (name "FEED" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -2.54 90) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -2.54 90) (length 2.54) hide
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -2.54 90) (length 2.54) hide
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
   (symbol "Antenna_Dipole" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
     (property "Reference" "AE" (at 1.27 1.27 0)
       (effects (font (size 1.27 1.27)))
